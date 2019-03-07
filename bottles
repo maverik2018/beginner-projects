@@ -1,0 +1,17 @@
+'''
+99 bottles of beer on the wall, 99 bottles of beer. 
+Take one down, pass it around, 98 bottles of beer on the wall...
+
+Create a program that prints out every line to the song "99 bottles of beer on the wall."
+Do not use a list for all of the numbers, and do not manually type them all in. Use a built in function instead.
+Besides the phrase "take one down," you may not type in any numbers/names of numbers directly into your song lyrics.
+Remember, when you reach 1 bottle left, the word "bottles" becomes singular.
+
+'''
+
+def bottles():
+    lyrics = "%d bottles of beer on the wall, %d bottles of beer.\nTake one down, pass it around, %d bottles of beer on the wall..." 
+    for i in range(99,0,-1):
+        print(lyrics%(i,i,i-1))
+
+bottles()
